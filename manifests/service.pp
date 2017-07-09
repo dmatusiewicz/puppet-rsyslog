@@ -12,7 +12,7 @@
 #
 class rsyslog::service {
   service { $rsyslog::service_name:
-    ensure     => running,
+    ensure     => stopped,
     enable     => true,
     hasstatus  => $rsyslog::service_hasstatus,
     hasrestart => $rsyslog::service_hasrestart,
